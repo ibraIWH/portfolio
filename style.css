@@ -1,6 +1,111 @@
+:root {
+  --bg: #ffffff;
+  --text: #1a1a1a;
+  --muted: #666;
+  --border: #e6e6e6;
+  --accent: #007aff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
 body {
-  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-  max-width: 700px;
-  margin: 40px auto;
-  padding: 0 20px;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", system-ui, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+main {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 48px 24px;
+}
+
+.hero {
+  margin-bottom: 64px;
+}
+
+.hero h1 {
+  font-size: 42px;
+  margin-bottom: 8px;
+}
+
+.hero h2 {
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--accent);
+  margin-bottom: 16px;
+}
+
+.hero p {
+  font-size: 17px;
+  color: var(--muted);
+  max-width: 640px;
+  line-height: 1.6;
+}
+
+.links {
+  margin-top: 24px;
+}
+
+.links a {
+  margin-right: 16px;
+  text-decoration: none;
+  color: var(--accent);
+  font-weight: 500;
+}
+
+.links a:hover {
+  text-decoration: underline;
+}
+
+.projects h3 {
+  font-size: 26px;
+  margin-bottom: 24px;
+}
+
+.project {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 20px 0;
+  border-top: 1px solid var(--border);
+}
+
+.project:last-child {
+  border-bottom: 1px solid var(--border);
+}
+
+.project h4 {
+  margin: 0 0 6px 0;
+  font-size: 18px;
+}
+
+.project p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.5;
+}
+
+.project a {
+  white-space: nowrap;
+  align-self: center;
+  text-decoration: none;
+  color: var(--accent);
+  font-weight: 500;
+}
+
+.project a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  margin-top: 64px;
+  padding-top: 24px;
+  border-top: 1px solid var(--border);
+  color: var(--muted);
+  font-size: 14px;
+  text-align: center;
 }
