@@ -1,112 +1,97 @@
-:root {
-    --bg: #ffffff;
-    --text: #1a1a1a;
-    --muted: #666;
-    --border: #e6e6e6;
-    --accent: #007aff;
-  }
-  
-  * {
-    box-sizing: border-box;
-  }
-  
-  body {
-    margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", system-ui, sans-serif;
-    background: var(--bg);
-    color: var(--text);
-  }
-  
-  main {
-    max-width: 860px;
-    margin: 0 auto;
-    padding: 48px 24px;
-  }
-  
-  .hero {
-    margin-bottom: 64px;
-  }
-  
-  .hero h1 {
-    font-size: 42px;
-    margin-bottom: 8px;
-  }
-  
-  .hero h2 {
-    font-size: 22px;
-    font-weight: 600;
-    color: var(--accent);
-    margin-bottom: 16px;
-  }
-  
-  .hero p {
-    font-size: 17px;
-    color: var(--muted);
-    max-width: 640px;
-    line-height: 1.6;
-  }
-  
-  .links {
-    margin-top: 24px;
-  }
-  
-  .links a {
-    margin-right: 16px;
-    text-decoration: none;
-    color: var(--accent);
-    font-weight: 500;
-  }
-  
-  .links a:hover {
-    text-decoration: underline;
-  }
-  
-  .projects h3 {
-    font-size: 26px;
-    margin-bottom: 24px;
-  }
-  
-  .project {
-    display: flex;
-    justify-content: space-between;
-    gap: 24px;
-    padding: 20px 0;
-    border-top: 1px solid var(--border);
-  }
-  
-  .project:last-child {
-    border-bottom: 1px solid var(--border);
-  }
-  
-  .project h4 {
-    margin: 0 0 6px 0;
-    font-size: 18px;
-  }
-  
-  .project p {
-    margin: 0;
-    color: var(--muted);
-    line-height: 1.5;
-  }
-  
-  .project a {
-    white-space: nowrap;
-    align-self: center;
-    text-decoration: none;
-    color: var(--accent);
-    font-weight: 500;
-  }
-  
-  .project a:hover {
-    text-decoration: underline;
-  }
-  
-  footer {
-    margin-top: 64px;
-    padding-top: 24px;
-    border-top: 1px solid var(--border);
-    color: var(--muted);
-    font-size: 14px;
-    text-align: center;
-  }
-  
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ibrahim — iOS Developer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero">
+      <span class="badge">Available for Junior iOS Roles</span>
+
+      <h1>Ibrahim</h1>
+      <h2>Junior iOS Developer</h2>
+
+      <p class="hero-text">
+        I build iOS applications using <strong>Swift</strong> and <strong>SwiftUI</strong>,
+        focusing on clean architecture, real-world API integration, and solid fundamentals.
+      </p>
+
+      <div class="hero-links">
+        <a href="https://github.com/ibraIWH" target="_blank" class="primary">GitHub</a>
+        <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
+        <a href="cv.pdf" target="_blank">Download CV</a>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="projects">
+      <h3>Selected Projects</h3>
+
+      <div class="project-card">
+        <div class="project-info">
+          <h4>Posts Browser (iOS)</h4>
+          <p>
+            SwiftUI application that consumes a public REST API using async/await.
+            Includes pagination, loading indicators, error handling, and MVVM architecture.
+          </p>
+          <ul>
+            <li>SwiftUI</li>
+            <li>async/await</li>
+            <li>REST API</li>
+            <li>MVVM</li>
+          </ul>
+        </div>
+        <a href="https://github.com/ibraIWH/posts-browser-ios" target="_blank">View on GitHub →</a>
+      </div>
+
+      <div class="project-card">
+        <div class="project-info">
+          <h4>Habit Tracker (iOS)</h4>
+          <p>
+            Offline-first habit tracking app built with SwiftUI.
+            Demonstrates state management, local persistence, and native gesture interactions.
+          </p>
+          <ul>
+            <li>SwiftUI</li>
+            <li>Local Storage</li>
+            <li>State Management</li>
+          </ul>
+        </div>
+        <a href="https://github.com/ibraIWH/habit-tracker-ios" target="_blank">View on GitHub →</a>
+      </div>
+
+      <div class="project-card">
+        <div class="project-info">
+          <h4>Abbayah Store (iOS)</h4>
+          <p>
+            SwiftUI iOS client that consumes a custom Node.js backend API.
+            Fetches and displays products from a deployed server, demonstrating
+            real-world client–server integration.
+          </p>
+          <ul>
+            <li>SwiftUI</li>
+            <li>URLSession</li>
+            <li>Custom Backend API</li>
+          </ul>
+        </div>
+        <a href="https://github.com/ibraIWH/abbayah-backend" target="_blank">Backend API →</a>
+      </div>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <p>© 2025 Ibrahim — iOS Developer</p>
+      <p class="footer-sub">Built with HTML & CSS · Focused on code, not hype</p>
+    </footer>
+
+  </main>
+
+</body>
+</html>
